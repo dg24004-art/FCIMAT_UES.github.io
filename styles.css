@@ -1,0 +1,385 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* Usando la fuente Roboto */
+  background: #e0f2f7; /* Un color de fondo suave */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #8e0e0e; /* rojo, color institucional */
+  color: white;
+  padding: 20px 0; /* Padding superior e inferior */
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra sutil */
+}
+
+header h1 {
+  margin-bottom: 15px;
+  font-family: 'Bitcount Grid Double', sans-serif; /* Usando fuente para el título */
+  font-size: 2.5em; /* Tamaño de fuente más grande */
+}
+
+/* Navegación */
+.nav-list {
+  display: flex; /* Flexbox para la barra de navegación */
+  justify-content: center;
+  gap: 30px; /* Espacio entre los elementos del menú */
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700; /* Negrita */
+  padding: 5px 10px; /* Padding para hacer clic más fácil */
+  transition: all 0.3s ease; /* Transición suave*/
+}
+
+.nav-list li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo sutil al pasar el ratón */
+  border-radius: 5px;
+  text-decoration: none; /* Quitar subrayado al pasar el ratón */
+}
+
+/* Layout principal usando CSS Grid */
+.layout-grid {
+  display: grid;
+  grid-template-areas:
+    "aside main";
+  grid-template-columns: 280px 1fr; /* Ancho de la barra lateral ligeramente mayor */
+  gap: 30px; /* Aumento del espacio entre elementos */
+  padding: 30px; /*padding alrededor del grid */
+  max-width: 1200px; /* Ancho máximo para el contenido */
+  margin: 20px auto; /* Centrar el grid y añadir margen superior */
+  background-color: #fff; /* Fondo blanco para el contenedor principal */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra más pronunciada */
+}
+
+/* Aside (Barra lateral) */
+aside {
+  grid-area: aside;
+  background: #e8f5e9; /* Un verde claro para el aside */
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.05); /* Sombra interna */
+}
+
+aside h2 {
+  color: #4d0003;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #c8e6c9;
+  padding-bottom: 10px;
+}
+
+aside ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+aside ul li {
+  margin-bottom: 10px;
+}
+
+aside ul li a {
+  color: #480207;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+aside ul li a:hover {
+  color: #77191f;
+  text-decoration: underline;
+}
+
+/* Main (Contenido principal) */
+main {
+  grid-area: main;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+main h2 {
+  color: #480207;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+main h3 {
+  color: #480207;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+main h4 {
+  color: #480207;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+main p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+main ul {
+  margin-bottom: 20px;
+  list-style-position: inside; /* Puntos dentro del padding */
+  padding-left: 20px; /* Para que los puntos se vean */
+}
+
+/* Imágenes y Video Responsivos */
+.responsive-img {
+  max-width: 100%; /* Asegura que la imagen no exceda su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Elimina espacio extra debajo de la imagen */
+  margin: 15px auto; /* Centra la imagen */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+.small-img {
+  max-width: 180px; /* Tamaño más pequeño para logos específicos */
+  margin: 10px auto;
+}
+
+.responsive-video {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* Limita la altura máxima del video */
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Sección destacada con Flexbox (Contenedor de Tarjetas) */
+.destacada {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px dashed #cfd8dc; /* Línea divisoria */
+}
+
+.card-container {
+  display: flex; /* Flexbox para las tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en pantallas pequeñas */
+  gap: 20px; /* Espacio entre las tarjetas */
+  justify-content: center; /* Centra las tarjetas si no llenan la fila */
+  margin-top: 20px;
+}
+
+.card {
+  background: rgb(197, 225, 243); /* celeste más claro para las tarjetas */
+  color: rgb(2, 2, 27);
+  padding: 20px;
+  border-radius: 10px; /* Bordes más redondeados */
+  flex: 1 1 calc(33% - 40px); /* Flex: crecer, encoger, base (3 tarjetas por fila con gap) */
+  min-width: 250px; /* Ancho mínimo para cada tarjeta */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para las tarjetas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para hover */
+}
+
+.card h4 {
+  color: #8d0707;
+  margin-bottom: 10px;
+  border-bottom: none; /* Eliminar borde inferior de h4 dentro de tarjeta */
+  padding-bottom: 0;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Estilos para el Formulario */
+.contact-form {
+  background: #f1f8e9; /* Fondo muy claro para el formulario */
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  gap: 15px; /* Espacio entre campos */
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #00034d;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c8e6c9;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: #630303;
+  outline: none;
+  box-shadow: 0 0 5px rgba(80, 3, 12, 0.3);
+}
+
+.contact-form textarea {
+  resize: vertical; /* Permite redimensionar verticalmente */
+  min-height: 100px;
+}
+
+.contact-form fieldset {
+  border: 1px solid #c8e6c9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.contact-form legend {
+  font-weight: bold;
+  color: #4d0001;
+  padding: 0 10px;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #fb0a16; /* Botón de envío con color institucional */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: flex-start; /* Alinea el botón al inicio */
+  margin-top: 15px;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #4d0003;
+  transform: translateY(-2px); /* Pequeño efecto de elevación */
+}
+
+.enlaces-utiles {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.95em;
+}
+
+.enlaces-utiles a {
+  color: #4d0003;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.enlaces-utiles a:hover {
+  color: #4d0003;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  grid-area: footer; /* Se asegura que el footer siempre esté en su área asignada */
+  background: #4d0003; /* Un gris oscuro para el footer */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px; /* Margen superior más grande para separar del contenido */
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* Sombra superior */
+}
+
+/* Responsive con media queries */
+@media (max-width: 768px) {
+  .layout-grid {
+    grid-template-areas:
+      "header" /* Aunque header está fuera del grid, es un recordatorio de orden visual */
+      "main"
+      "aside"
+      "footer";
+    grid-template-columns: 1fr; /* Una sola columna para pantallas pequeñas */
+    padding: 15px; /* Menos padding en pantallas pequeñas */
+    gap: 20px; /* Menos gap */
+    margin: 15px auto; /* Ajuste de margen */
+  }
+
+  header h1 {
+    font-size: 1.8em; /* Tamaño de fuente más pequeño para el header */
+  }
+
+  .nav-list {
+    flex-direction: column; /* Menú de navegación apilado en vertical */
+    align-items: center; /* Centrar los elementos del menú */
+    gap: 10px; /* Reducir el espacio entre elementos del menú */
+    margin-top: 15px; /* Espacio con el título */
+  }
+
+  .card-container {
+    flex-direction: column; /* Tarjetas apiladas en vertical */
+    align-items: center; /* Centrar las tarjetas */
+  }
+
+  .card {
+    min-width: 90%; /* Las tarjetas ocupan casi todo el ancho */
+    flex: 1 1 auto; /* Ajuste para que se expandan mejor */
+  }
+
+  main, aside, .contact-form {
+    padding: 20px; /* Reducir padding interno */
+  }
+
+  .responsive-video {
+    max-height: 250px; /* Ajustar altura máxima del video */
+  }
+}
+
+/* Media Query para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .nav-list li a {
+    font-size: 0.9em;
+    padding: 8px 15px;
+  }
+
+  .layout-grid {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  main h2, main h3 {
+    font-size: 1.3em;
+  }
+
+  .contact-form input[type="submit"] {
+    font-size: 1em;
+    padding: 10px 15px;
+  }
+}
