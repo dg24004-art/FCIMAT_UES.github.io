@@ -314,9 +314,13 @@ footer {
   box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* Sombra superior */
 }
 
-/* Responsive con media queries */
-@media (max-width: 768px) {
-  .layout-grid {
+/* Responsive con media queries:    .layout-grid utiliza display: grid para 
+   dividir la página en dos columnas (main y aside),
+   y que cambia a una sola columna en pantallas pequeñas gracias al @media query.*/
+
+   @media (max-width: 768px) {
+ /* selectores de clases */ 
+  .layout-grid { /*.layout-grid es una clase */
     grid-template-areas:
       "header" /* Aunque header está fuera del grid, es un recordatorio de orden visual */
       "main"
@@ -377,6 +381,12 @@ footer {
   main h2, main h3 {
     font-size: 1.3em;
   }
+
+  .contact-form input[type="submit"] {
+    font-size: 1em;
+    padding: 10px 15px;
+  }
+}
 
   .contact-form input[type="submit"] {
     font-size: 1em;
