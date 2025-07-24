@@ -1,180 +1,188 @@
 <!DOCTYPE html>
-<!-- Esta linea indica que el documento es de tipo HTML5 -->
+<!-- Documento HTML5 -->
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <!-- Configura la codificacion para que se vean bien los caracteres especiales -->
+  <!-- Codificación para caracteres especiales -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Permite que el sitio se vea bien en celulares y tabletas -->
+  <!-- Permite diseño responsive -->
 
-  <title> Facultad de Ciencias Naturales y Matematica - UES</title>
-  <!-- Titulo que aparece en la pestaña del navegador -->
+  <title>Facultad de Ciencias Naturales y Matemática - UES</title>
+  <!-- Título en la pestaña del navegador -->
 
-  <!-- Enlaces para usar fuentes desde Google -->
+  <!-- Conexión y uso de fuentes desde Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Icono que aparece en la pestaña del navegador -->
+  <!-- Favicon del sitio -->
   <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
 
-  <!-- Enlace al archivo de estilos CSS -->
+  <!-- Enlace a hoja de estilos externa -->
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <!-- Encabezado principal de la pagina -->
-  <header>
-    <h1>Facultad de Ciencias Naturales y Matematica</h1>
 
-    <!-- Menu de navegacion -->
+<body>
+  <!-- ===== ENCABEZADO PRINCIPAL ===== -->
+  <header>
+    <h1>Facultad de Ciencias Naturales y Matemática</h1>
+
+    <!-- Menú de navegación -->
     <nav>
       <ul class="nav-list">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#carrera">Carrera</a></li>
-        <li><a href="#areas">Areas</a></li>
-        <li><a href="#formulario">formulario</a></li>
+        <li><a href="#areas">Áreas</a></li>
+        <li><a href="#formulario">Formulario</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Contenedor principal con diseño de dos columnas -->
+  <!-- ===== CONTENEDOR PRINCIPAL (aside + main) ===== -->
   <div class="layout-grid">
+
+    <!-- ===== BARRA LATERAL ===== -->
     <aside>
-      <!-- Barra lateral con informacion extra -->
-      <h2>Informacion Adicional</h2>
-      <p>Explora mas sobre los recursos y eventos de la facultad.</p>
+      <h2>Información Adicional</h2>
+      <p>Explora más sobre los recursos y eventos de la facultad.</p>
       <ul>
-        <li><a href="https://naturales.ues.edu.sv/calendario-academico/" target="_blank">Calendario Academico</a></li>
-        <li><a href="https://naturales.ues.edu.sv/noticias/" target="_blank">Ultimas Noticias</a></li>
-        <li><a href="https://www.facebook.com/share/p/16tstPi7vk/" target="_blank">Directorio de correos institucionales de la facultad</a></li>
+        <li><a href="https://naturales.ues.edu.sv/calendario-academico/" target="_blank">Calendario Académico</a></li>
+        <li><a href="https://naturales.ues.edu.sv/noticias/" target="_blank">Últimas Noticias</a></li>
+        <li><a href="https://www.facebook.com/share/p/16tstPi7vk/" target="_blank">Directorio de correos institucionales</a></li>
       </ul>
-      <p>Siguenos en redes sociales para estar al tanto de las novedades.</p>
+      <p>Síguenos en redes sociales para estar al tanto de las novedades.</p>
     </aside>
 
-   <!-- MAIN --> 
+    <!-- ===== SECCIÓN PRINCIPAL (main) ===== -->
     <main>
-      <!-- Seccion principal de bienvenida -->
+
+      <!-- ===== SECCIÓN DE INICIO ===== -->
       <section id="inicio">
-        <h2>Licenciatura en Informatica Educativa</h2>
+        <h2>Licenciatura en Informática Educativa</h2>
 
         <!-- Imagen de la facultad -->
-        <img src="./img/CIMAT.jpeg" alt="Logo de la Facultad de Ciencias Naturales y Matematica" class="responsive-img" />
+        <img src="./img/CIMAT.jpeg" alt="Logo Facultad" class="responsive-img" />
 
         <p>
-          La Licenciatura en Informatica Educativa pertenece a la Facultad de Ciencias Naturales y Matematica
-          de la Universidad de El Salvador. Esta carrera busca formar profesionales con capacidades pedagogicas y tecnologicas
-          para innovar en los procesos de ensenanza y aprendizaje.
+          La Licenciatura en Informática Educativa pertenece a la Facultad de Ciencias Naturales y Matemática
+          de la Universidad de El Salvador. Esta carrera busca formar profesionales con capacidades pedagógicas
+          y tecnológicas para innovar en los procesos de enseñanza y aprendizaje.
         </p>
 
-        <!-- Logo de la UES -->
-        <img src="./img/logoUES.jpg" alt="Logo de la Universidad de El Salvador" class="responsive-img small-img" />
+        <!-- Logo institucional -->
+        <img src="./img/logoUES.jpg" alt="Logo UES" class="responsive-img small-img" />
       </section>
 
+      <!-- ===== SECCIÓN SOBRE LA CARRERA ===== -->
       <section id="carrera">
         <h2>Sobre la Carrera</h2>
         <p>Esta carrera forma profesionales con habilidades tecnológicas y pedagógicas para innovar en entornos educativos.</p>
-        </section>
+      </section>
 
-
-      <!-- Seccion con las areas de formacion -->
+      <!-- ===== ÁREAS DE FORMACIÓN PROFESIONAL ===== -->
       <section id="areas">
-        <h3>Areas de formacion profesional</h3>
+        <h3>Áreas de formación profesional</h3>
         <ul>
           <li>Desarrollo de Software Educativo</li>
-          <li>Pedagogia y Didactica</li>
-          <li>Tecnologias Emergentes</li>
-          <li>Investigacion Cientifica</li>
+          <li>Pedagogía y Didáctica</li>
+          <li>Tecnologías Emergentes</li>
+          <li>Investigación Científica</li>
         </ul>
       </section>
 
-      <!-- Tarjetas con contenido destacado -->
+      <!-- ===== TARJETAS DESTACADAS CON IMÁGENES ===== -->
       <section class="destacada">
         <h3>Contenido Destacado y Recursos Visuales</h3>
         <div class="card-container">
-        <div class="card">
-         <img src="./img/software-educativo.png" alt="Software educativo" class="responsive-img small-img" />
-          <h4><a href="https://flexboxfroggy.com/#es" target="_blank">Software Educativo</a></h4>
-          <p>Herramientas interactivas para el aprendizaje.</p>
+
+          <!-- Tarjeta 1 -->
+          <div class="card">
+            <img src="./img/software-educativo.png" alt="Software educativo" class="responsive-img small-img" />
+            <h4><a href="https://flexboxfroggy.com/#es" target="_blank">Software Educativo</a></h4>
+            <p>Herramientas interactivas para el aprendizaje.</p>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div class="card">
+            <img src="./img/innovacion-pedagogica.png" alt="Innovación pedagógica" class="responsive-img small-img" />
+            <h4><a href="https://www.redem.org/10-innovaciones-pedagogicas-que-incrementaran-su-impacto-en-la-educacion-mundial/" target="_blank">Innovación Pedagógica</a></h4>
+            <p>Últimas tendencias en educación digital.</p>
+          </div>
+
+          <!-- Tarjeta 3 -->
+          <div class="card">
+            <img src="./img/proyectos-finales.jpg" alt="Proyectos finales" class="responsive-img small-img" />
+            <h4><a href="https://naturales.ues.edu.sv/investigacion/" target="_blank">Proyectos Finales</a></h4>
+            <p>Trabajos de investigación de los estudiantes.</p>
+          </div>
+
         </div>
+      </section>
 
-         <!-- Tarjeta 2: Innovación Pedagógica -->
-  <div class="card">
-    <img src="./img/innovacion-pedagogica.png" alt="Innovación pedagógica" class="responsive-img small-img" />
-    <h4><a href="https://www.redem.org/10-innovaciones-pedagogicas-que-incrementaran-su-impacto-en-la-educacion-mundial/" target="_blank">Innovación Pedagógica</a></h4>
-    <p>Últimas tendencias en educación digital.</p>
-  </div>
-
-  <!-- Tarjeta 3: Proyectos Finales -->
-  <div class="card">
-    <img src="./img/proyectos-finales.jpg" alt="Proyectos finales" class="responsive-img small-img" />
-    <h4><a href="https://naturales.ues.edu.sv/investigacion/" target="_blank">Proyectos Finales</a></h4>
-    <p>Trabajos de investigación de los estudiantes.</p>
-  </div>
-</div>
-
-      <!-- Seccion con video -->
+      <!-- ===== SECCIÓN DE VIDEO ===== -->
       <section class="video-section">
         <h3>Video Introductorio</h3>
-        <p>Conoce mas sobre la facultad en este video.</p>
+        <p>Conoce más sobre la facultad en este video.</p>
         <p>Por: Maria Duran.</p>
         <video controls class="responsive-video">
-          <source src="./media/CIMAT-UES.mp4" type="video/mp4">
+          <source src="./media/CIMAT-UES.mp4" type="video/mp4" />
           Tu navegador no soporta la etiqueta de video.
         </video>
       </section>
 
-      <!-- Formulario de interes -->
+      <!-- ===== FORMULARIO DE INTERÉS ===== -->
       <section id="formulario">
-        <h3>Si estas interesado en estudiar esta carrera, llena el siguiente formulario:</h3>
+        <h3>¿Te interesa esta carrera? Llena el siguiente formulario:</h3>
 
         <form class="contact-form">
-          <!-- Nombre -->
+          <!-- Campo: Nombre -->
           <label for="nombre">Nombre completo:</label>
           <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required />
 
-          <!-- Correo -->
-          <label for="correo">Correo electronico:</label>
+          <!-- Campo: Correo -->
+          <label for="correo">Correo electrónico:</label>
           <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required />
 
-          <!-- Genero -->
+          <!-- Campo: Género -->
           <fieldset>
-            <legend>Genero:</legend>
+            <legend>Género:</legend>
             <input type="radio" id="masculino" name="genero" value="Masculino" />
             <label for="masculino">Masculino</label>
             <input type="radio" id="femenino" name="genero" value="Femenino" />
             <label for="femenino">Femenino</label>
           </fieldset>
 
-          <!-- Carrera de interes -->
+          <!-- Campo: Carrera de interés -->
           <fieldset>
-            <legend>¿Que carrera te interesa?</legend>
+            <legend>¿Qué carrera te interesa?</legend>
             <input type="checkbox" id="informatica" name="interes" value="Informatica" />
-            <label for="informatica">Licenciatura en Informatica Educativa</label>
+            <label for="informatica">Licenciatura en Informática Educativa</label>
             <input type="checkbox" id="matematicas" name="interes" value="Matematicas" />
-            <label for="matematicas">Licenciatura en Ensenanza de las Matematicas</label>
+            <label for="matematicas">Licenciatura en Enseñanza de las Matemáticas</label>
           </fieldset>
 
-          <!-- Comentario -->
+          <!-- Campo: Comentarios -->
           <label for="mensaje">Puedes dejar un comentario:</label>
-          <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe aqui..."></textarea>
+          <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe aquí..."></textarea>
 
-          <!-- Boton para enviar -->
+          <!-- Botón: Enviar -->
           <input type="submit" value="Enviar datos" />
         </form>
 
-        <!-- Enlace a la pagina oficial -->
+        <!-- Enlace institucional -->
         <p class="enlaces-utiles">
-          Para mas informacion, visita el sitio oficial de la
-          <a href="https://naturales.ues.edu.sv/" target="_blank">Facultad de Ciencias Naturales y Matematica</a>.
+          Para más información, visita el sitio oficial de la
+          <a href="https://naturales.ues.edu.sv/" target="_blank">Facultad de Ciencias Naturales y Matemática</a>.
         </p>
       </section>
     </main>
   </div>
 
-  <!-- Pie de pagina -->
+  <!-- ===== PIE DE PÁGINA ===== -->
   <footer>
-    <p>&copy; 2025 Facultad de Ciencias Naturales y Matematica - UES. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Facultad de Ciencias Naturales y Matemática - UES. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
+
