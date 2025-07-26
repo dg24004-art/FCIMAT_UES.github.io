@@ -1,97 +1,105 @@
-/* Estilos generales */
+/* Reset general: elimina márgenes y paddings por defecto */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Estilo global del body */
 body {
-  font-family: 'Roboto', sans-serif; /* Usando la fuente Roboto */
-  background: #e0f2f7; /* Un color de fondo suave */
-  color: #333;
-  line-height: 1.6;
-}
-/* Header */
-header {
-  background: #8e0e0e; /* color institucional */
-  color: white;
-  padding: 20px 30px; /* espacio arriba/abajo y lateral */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-/* Contenedor flexible para imagenes y titulo */
-.header-container {
-  display: flex;
-  align-items: center; /* centra verticalmente */
-  justify-content: space-between; /* espacio entre los elementos */
-  max-width: 1200px;
-  margin: 0 auto; /* centrar horizontalmente */
-  gap: 10px; /* espacio pequeño entre elementos */
-  flex-wrap: wrap; /* para que en pantallas pequeñas se adapte */
+  font-family: 'Roboto', sans-serif; /* Fuente legible y moderna */
+  background: #e0f2f7; /* Fondo suave y claro */
+  color: #333; /* Color de texto oscuro */
+  line-height: 1.6; /* Espaciado entre líneas */
 }
 
-/* Imagenes logos */
+/* ENCABEZADO */
+header {
+  background: #8e0e0e; /* Color institucional (rojo oscuro) */
+  color: white;
+  padding: 20px 30px; /* Espaciado interior */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra inferior */
+}
+
+/* Contenedor del header: logos + título */
+.header-container {
+  display: flex; /* Flexbox para alinear elementos */
+  align-items: center; /* Centrado vertical */
+  justify-content: space-between; /* Separación entre logo-título-logo */
+  max-width: 1200px;
+  margin: 0 auto; /* Centrar horizontalmente */
+  gap: 10px; /* Espacio entre elementos */
+  flex-wrap: wrap; /* Adaptabilidad para pantallas pequeñas */
+}
+
+/* Imagenes del header */
 .header-container img {
   max-height: 70px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 
-/* Titulo centrado */
+/* Título principal del header */
 .header-container h1 {
-  font-family: 'Bitcount Grid Double', sans-serif;
+  font-family: 'Bitcount Grid Double', sans-serif; /* Fuente decorativa */
   font-size: 2.5em;
   margin: 0;
   text-align: center;
-  flex: 1; /* ocupa todo el espacio entre logos */
+  flex: 1;
   color: white;
-  word-break: break-word;
+  word-break: break-word; /* Evita desbordamientos */
 }
 
-/* Navegación */
+/* MENÚ DE NAVEGACIÓN */
 .nav-list {
-  display: flex; /* Flexbox para la barra de navegación */
+  display: flex;
   justify-content: center;
-  gap: 30px; /* Espacio entre los elementos del menú */
+  gap: 30px;
   list-style: none;
   padding: 0;
-  margin-top: 15px; /* separación del header */
+  margin-top: 15px;
 }
 
+/* Enlaces del menú */
 .nav-list li a {
   color: white;
   text-decoration: none;
-  font-weight: 700; /* Negrita */
-  padding: 5px 10px; /* Padding para hacer clic más fácil */
-  transition: all 0.3s ease; /* Transición suave*/
+  font-weight: 700;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
 }
 
+/* Efecto hover en enlaces */
 .nav-list li a:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Fondo sutil al pasar el ratón */
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
-  text-decoration: none; /* Quitar subrayado al pasar el ratón */
+  text-decoration: none;
 }
 
-/* Layout principal usando CSS Grid */
+/* DISEÑO DE PÁGINA PRINCIPAL CON GRID */
 .layout-grid {
   display: grid;
-  grid-template-areas:
-    "aside main";
-  grid-template-columns: 280px 1fr; /* Ancho de la barra lateral ligeramente mayor */
-  gap: 30px; /* Aumento del espacio entre elementos */
-  padding: 30px; /* padding alrededor del grid */
-  max-width: 1200px; /* Ancho máximo para el contenido */
-  margin: 20px auto; /* Centrar el grid y añadir margen superior */
-  background-color: #fff; /* Fondo blanco para el contenedor principal */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra más pronunciada */
+  grid-template-areas: "aside main";
+  grid-template-columns: 280px 1fr;
+  gap: 30px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-/* Aside (Barra lateral) */
+
+/* ASIDE (barra lateral) */
 aside {
   grid-area: aside;
-  background: #e8f5e9; /* Un verde claro para el aside */
+  background: #e8f5e9; /* Verde claro */
   padding: 25px;
   border-radius: 8px;
-  box-shadow: inset 0 0 8px rgba(0,0,0,0.05); /* Sombra interna */
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.05);
 }
+
+/* Títulos del aside */
 aside h2 {
   color: #4d0003;
   margin-bottom: 15px;
@@ -99,24 +107,30 @@ aside h2 {
   padding-bottom: 10px;
 }
 
+/* Lista del aside */
 aside ul {
   list-style: none;
   padding-left: 0;
   margin-top: 15px;
 }
+
 aside ul li {
   margin-bottom: 10px;
 }
+
+/* Enlaces del aside */
 aside ul li a {
   color: #480207;
   text-decoration: none;
   transition: color 0.3s ease;
 }
+
 aside ul li a:hover {
   color: #77191f;
   text-decoration: underline;
 }
-/* Main (Contenido principal) */
+
+/* CONTENIDO PRINCIPAL */
 main {
   grid-area: main;
   background: #ffffff;
@@ -124,107 +138,116 @@ main {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
-main h2 {
+
+/* Encabezados dentro de main */
+main h2, main h3, main h4 {
   color: #480207;
   margin-bottom: 15px;
   border-bottom: 1px solid #eee;
   padding-bottom: 8px;
 }
-main h3 {
-  color: #480207;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 8px;
-}
-main h4 {
-  color: #480207;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 8px;
-}
+
+/* Párrafos */
 main p {
   margin-bottom: 15px;
   text-align: justify;
 }
+
+/* Listas */
 main ul {
   margin-bottom: 20px;
-  list-style-position: inside; /* Puntos dentro del padding */
-  padding-left: 20px; /* Para que los puntos se vean */
+  list-style-position: inside;
+  padding-left: 20px;
 }
-/* Imágenes y Video Responsivos */
+
+/* IMÁGENES RESPONSIVAS */
 .responsive-img {
-  max-width: 100%; /* Asegura que la imagen no exceda su contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  display: block; /* Elimina espacio extra debajo de la imagen */
-  margin: 15px auto; /* Centra la imagen */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+/* Imágenes más pequeñas */
 .small-img {
-  max-width: 180px; /* Tamaño más pequeño para logos específicos */
+  max-width: 180px;
   margin: 10px auto;
 }
+
+/* VIDEO RESPONSIVO */
 .responsive-video {
   width: 100%;
   height: auto;
-  max-height: 400px; /* Limita la altura máxima del video */
+  max-height: 400px;
   display: block;
   margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-/* Sección destacada con Flexbox (Contenedor de Tarjetas) */
+
+/* SECCIÓN DESTACADA */
 .destacada {
   margin-top: 30px;
   padding-top: 20px;
-  border-top: 1px dashed #cfd8dc; /* Línea divisoria */
+  border-top: 1px dashed #cfd8dc;
 }
+
+/* CONTENEDOR DE TARJETAS */
 .card-container {
-  display: flex; /* Flexbox para las tarjetas */
-  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en pantallas pequeñas */
-  gap: 20px; /* Espacio entre las tarjetas */
-  justify-content: center; /* Centra las tarjetas si no llenan la fila */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
   margin-top: 20px;
 }
+
+/* TARJETAS */
 .card {
-  background: rgb(197, 225, 243); /* celeste más claro para las tarjetas */
+  background: rgb(197, 225, 243);
   color: rgb(2, 2, 27);
   padding: 20px;
-  border-radius: 10px; /* Bordes más redondeados */
-  flex: 1 1 calc(33% - 40px); /* Flex: crecer, encoger, base (3 tarjetas por fila con gap) */
-  min-width: 250px; /* Ancho mínimo para cada tarjeta */
+  border-radius: 10px;
+  flex: 1 1 calc(33% - 40px);
+  min-width: 250px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para las tarjetas */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .card h4 {
   color: #8d0707;
   margin-bottom: 10px;
-  border-bottom: none; /* Eliminar borde inferior de h4 dentro de tarjeta */
+  border-bottom: none;
   padding-bottom: 0;
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+  transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
-/* Estilos para el Formulario */
+/* FORMULARIO DE CONTACTO */
 .contact-form {
-  background: #f1f8e9; /* Fondo muy claro para el formulario */
+  background: #f1f8e9;
   padding: 30px;
   border-radius: 10px;
   margin-top: 30px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   display: flex;
-  flex-direction: column; /* Organiza los elementos en columna */
-  gap: 15px; /* Espacio entre campos */
+  flex-direction: column;
+  gap: 15px;
 }
+
+/* Etiquetas del formulario */
 .contact-form label {
   font-weight: bold;
   color: #00034d;
   margin-bottom: 5px;
 }
+
+/* Campos del formulario */
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
@@ -235,9 +258,22 @@ main ul {
   font-size: 1em;
   transition: border-color 0.3s ease;
 }
+
+/* Efecto al hacer foco en campos */
 .contact-form input[type="text"]:focus,
 .contact-form input[type="email"]:focus,
 .contact-form textarea:focus {
-  border-color: #630
+  border-color: #630;
+}
 
+/* PIE DE PÁGINA */
+footer {
+  background-color: #cc9933; /* Color ocre */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  border-top: 3px solid #a67c00; /* Línea decorativa superior */
+}
 
