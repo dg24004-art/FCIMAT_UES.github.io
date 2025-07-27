@@ -1,177 +1,351 @@
 <!DOCTYPE html>
 <!-- Declaramos que el documento es HTML5 -->
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <!-- Permite mostrar caracteres especiales correctamente -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Permite mostrar caracteres especiales correctamente -->
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Para que se vea bien en celulares y tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Para que se vea bien en celulares y tablets -->
 
-  <title>Facultad de Ciencias Naturales y Matemática - UES</title>
-  <!-- Título que aparece en la pestaña del navegador -->
+    <title>Facultad de Ciencias Naturales y Matemática - UES</title>
+    <!-- Título que aparece en la pestaña del navegador -->
 
-  <!-- Google Fonts: se usan para aplicar fuentes modernas y legibles -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts: se usan para aplicar fuentes modernas y legibles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Ícono de la pestaña del navegador -->
-  <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
+    <!-- Ícono de la pestaña del navegador -->
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
 
-  <!-- Enlace al archivo de estilos externos -->
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+    <!-- Enlace al archivo de estilos externos -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ENCABEZADO -->
+    <header>
+      <!-- Contenedor flexible para logo izquierdo, título y logo derecho -->
 
-  <!-- ENCABEZADO -->
-  <header>
-    <!-- Contenedor flexible para logo izquierdo, título y logo derecho -->
-    <div class="header-container">
-      <img src="./img/CIMAT.jpeg" alt="Logo de la Facultad" class="responsive-img" />
-      <h1>Facultad de Ciencias Naturales y Matemática</h1>
-      <img src="./img/logoUES.jpg" alt="Logo UES" />
+      <div class="header-container">
+        <img
+          src="./img/CIMAT.jpeg"
+          alt="Logo de la Facultad"
+          class="responsive-img header-img"
+        />
+        <h1>Facultad de Ciencias Naturales y Matemática</h1>
+        <img src="./img/logoUES2.jpg" alt="Logo UES" class="header-img" />
+      </div>
+
+      <!-- Menú de navegación interna -->
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#carrera">Carrera</a></li>
+          <li><a href="#areas">Áreas</a></li>
+          <li><a href="#formulario">Formulario</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ESTRUCTURA PRINCIPAL: barra lateral + contenido -->
+    <div class="layout-grid">
+      <aside>
+        <!-- Barra lateral izquierda con enlaces y texto -->
+        <h2>Información Adicional</h2>
+        <p>Explora más sobre los recursos y eventos de la facultad.</p>
+        <ul>
+          <li>
+            <a
+              href="https://naturales.ues.edu.sv/calendario-academico/"
+              target="_blank"
+              >Calendario Académico</a
+            >
+          </li>
+          <li>
+            <a href="https://naturales.ues.edu.sv/noticias/" target="_blank"
+              >Últimas Noticias</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/share/p/16tstPi7vk/"
+              target="_blank"
+              >Directorio de correos institucionales</a
+            >
+          </li>
+        </ul>
+        <p>Síguenos en redes sociales para estar al tanto de las novedades:</p>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/UESoficial.SV" target="_blank">
+              Facebook oficial de la Universidad de El Salvador
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <main>
+        <!-- Sección de inicio -->
+        <section id="inicio">
+          <!-- NUEVA sección de introducción a la facultad -->
+          <div class="intro-facultad">
+            <img
+              src="./img/facultad_mate.jpg"
+              alt="Logo Facultad de Ciencias Naturales y Matemática"
+              class="responsive-img"
+            />
+            <h2>Facultad de Ciencias Naturales y Matemática</h2>
+            <p>
+              La Facultad de Ciencias Naturales y Matemática de la Universidad
+              de El Salvador se dedica a la formación académica, la
+              investigación y la proyección social en las áreas de las ciencias
+              exactas y naturales. Por medio de las siguientes carreras:
+            </p>
+
+            <ul>
+              <li>Licenciatura en Enseñanza de las Ciencias Naturales</li>
+              <li>Licenciatura en Enseñanza de la Matemática</li>
+              <li>Licenciatura en Informática Educativa</li>
+              <li>Licenciatura en Ciencias Químicas</li>
+              <li>Entre otras</li>
+            </ul>
+            <p>
+              Su compromiso es impulsar el desarrollo científico y educativo del
+              país.
+            </p>
+          </div>
+
+          <h2>La Licenciatura en Informática Educativa</h2>
+          <img
+            src="./img/lic_info.jpg"
+            alt="Logo Facultad"
+            class="responsive-img"
+          />
+
+          <p>pertenece a la Facultad de Ciencias Naturales y Matemática.</p>
+          <p>
+            Esta carrera se ofrece en línea bajo la modalidad a distancia, para
+            aquellas personas interesadas en continuar formandose, y que no
+            pueden dedicar el 100% de su tiempo dedicado al estudio, , la
+            liceciatura, integra recursos digitales en entornos de aprendizaje.
+            facilitando el acceso a la educación superior desde cualquier parte
+            del país. formando profesionales con capacidades pedagógicas y
+            tecnológicas para innovar en el proceso educativo.
+          </p>
+
+          <!-- Sección de video -->
+          <section class="video-section">
+            <h3>Video Introductorio</h3>
+            <p>Conoce más sobre la facultad en este video.</p>
+            <video controls class="responsive-video">
+              <source src="./media/CIMAT-UES.mp4" type="video/mp4" />
+              Tu navegador no soporta la etiqueta de video.
+            </video>
+            <p>Por: María Durán.</p>
+          </section>
+
+          <img
+            src="./img/logoUES.jpg"
+            alt="Logo UES"
+            class="responsive-img small-img"
+          />
+        </section>
+
+        <!-- Sección carrera -->
+        <section id="carrera">
+          <h2>Mas informacon sobre la Carrera</h2>
+          <p>
+            <video controls class="responsive-video">
+              <source
+                src="./media/informatica_ educativa.mp4"
+                type="video/mp4"
+              />
+              Tu navegador no soporta la etiqueta de video.
+            </video>
+          </p>
+        </section>
+
+        <!-- Sección de áreas -->
+        <section id="areas">
+          <h3>Áreas de formación profesional</h3>
+          <ul>
+            <li>Desarrollo de Software Educativo</li>
+            <li>Pedagogía y Didáctica</li>
+            <li>Tecnologías Emergentes</li>
+            <li>Investigación Científica</li>
+          </ul>
+        </section>
+
+        <!-- Formulario de interés -->
+        <section id="formulario">
+          <h3>¿Te interesa esta u otra carrera de la facultad de ciencias naturales y matematica? </h3>
+           <h3> Llena el siguiente formulario:</h3>
+          <form class="contact-form">
+            <label for="nombre">Nombre completo:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Escriba su nombre"
+              required
+            />
+
+            <label for="correo">Correo electrónico:</label>
+            <input
+              type="email"
+              id="correo"
+              name="correo"
+              placeholder="correo@ejemplo.com"
+              required
+            />
+
+            <fieldset>
+              <legend>Género:</legend>
+              <input
+                type="radio"
+                id="masculino"
+                name="genero"
+                value="Masculino"
+              />
+              <label for="masculino">Masculino</label>
+              <input
+                type="radio"
+                id="femenino"
+                name="genero"
+                value="Femenino"
+              />
+              <label for="femenino">Femenino</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>¿Qué carrera te interesa?</legend>
+
+              <input
+                type="checkbox"
+                id="ciencias-naturales"
+                name="interes"
+                value="CienciasNaturales"
+              />
+              <label for="ciencias-naturales"
+                >Licenciatura en Enseñanza de las Ciencias Naturales</label
+              >
+              <br />
+
+              <input
+                type="checkbox"
+                id="matematicas"
+                name="interes"
+                value="Matematicas"
+              />
+              <label for="matematicas"
+                >Licenciatura en Enseñanza de la Matemática</label
+              >
+              <br />
+
+              <input
+                type="checkbox"
+                id="informatica"
+                name="interes"
+                value="Informatica"
+              />
+              <label for="informatica"
+                >Licenciatura en Informática Educativa</label
+              >
+              <br />
+
+              <input
+                type="checkbox"
+                id="quimicas"
+                name="interes"
+                value="Quimicas"
+              />
+              <label for="quimicas">Licenciatura en Ciencias Químicas</label>
+            </fieldset>
+
+            <label for="mensaje">Comentario:</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              cols="50"
+              placeholder="Escribe aquí..."
+            ></textarea>
+
+           <!-- Botón de envío -->
+    <input type="submit" value="Enviar datos"  />
+
+          <p class="enlaces-utiles">
+            Más información en el sitio oficial:
+            <a href="https://naturales.ues.edu.sv/" target="_blank"
+              >Facultad de Ciencias Naturales y Matemática</a
+            >.
+          </p>
+        </section>
+      </main>
     </div>
 
-    <!-- Menú de navegación interna -->
-    <nav>
-      <ul class="nav-list">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#carrera">Carrera</a></li>
-        <li><a href="#areas">Áreas</a></li>
-        <li><a href="#formulario">Formulario</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- ESTRUCTURA PRINCIPAL: barra lateral + contenido -->
-  <div class="layout-grid">
-    <aside>
-      <!-- Barra lateral izquierda con enlaces y texto -->
-      <h2>Información Adicional</h2>
-      <p>Explora más sobre los recursos y eventos de la facultad.</p>
-      <ul>
-        <li><a href="https://naturales.ues.edu.sv/calendario-academico/" target="_blank">Calendario Académico</a></li>
-        <li><a href="https://naturales.ues.edu.sv/noticias/" target="_blank">Últimas Noticias</a></li>
-        <li><a href="https://www.facebook.com/share/p/16tstPi7vk/" target="_blank">Directorio de correos institucionales</a></li>
-      </ul>
-      <p>Síguenos en redes sociales para estar al tanto de las novedades:</p>
-<ul>
-  <li>
-    <a href="https://www.facebook.com/UESoficial.SV" target="_blank">
-      Facebook oficial de la Universidad de El Salvador
-    </a>
-  </li>
-</ul>
-
-    </aside>
-
-    <main>
-      <!-- Sección de inicio -->
-      <section id="inicio">
-        <h2>Licenciatura en Informática Educativa</h2>
-        <img src="./img/CIMAT.jpeg" alt="Logo Facultad" class="responsive-img" />
-        <p>
-          La Licenciatura en Informática Educativa pertenece a la Facultad de Ciencias Naturales y Matemática.
-          Forma profesionales con capacidades pedagógicas y tecnológicas para innovar en el proceso educativo.
-        </p>
-        <img src="./img/logoUES.jpg" alt="Logo UES" class="responsive-img small-img" />
-      </section>
-
-      <!-- Sección carrera -->
-      <section id="carrera">
-        <h2>Sobre la Carrera</h2>
-        <p>Formación en tecnologías y pedagogía para transformar la educación.</p>
-      </section>
-
-      <!-- Sección de áreas -->
-      <section id="areas">
-        <h3>Áreas de formación profesional</h3>
-        <ul>
-          <li>Desarrollo de Software Educativo</li>
-          <li>Pedagogía y Didáctica</li>
-          <li>Tecnologías Emergentes</li>
-          <li>Investigación Científica</li>
-        </ul>
-      </section>
-
-      <!-- Tarjetas con recursos destacados -->
-      <section class="destacada">
-        <h3>Contenido Destacado y Recursos Visuales</h3>
-        <div class="card-container">
-          <div class="card">
-            <img src="./img/software-educativo.png" alt="Software educativo" class="responsive-img small-img" />
-            <h4><a href="https://flexboxfroggy.com/#es" target="_blank">Software Educativo</a></h4>
-            <p>Herramientas interactivas para el aprendizaje.</p>
-          </div>
-          <div class="card">
-            <img src="./img/innovacion-pedagogica.png" alt="Innovación pedagógica" class="responsive-img small-img" />
-            <h4><a href="https://www.redem.org/10-innovaciones-pedagogicas-que-incrementaran-su-impacto-en-la-educacion-mundial/" target="_blank">Innovación Pedagógica</a></h4>
-            <p>Últimas tendencias en educación digital.</p>
-          </div>
-          <div class="card">
-            <img src="./img/proyectos-finales.jpg" alt="Proyectos finales" class="responsive-img small-img" />
-            <h4><a href="https://naturales.ues.edu.sv/investigacion/" target="_blank">Proyectos Finales</a></h4>
-            <p>Investigaciones realizadas por estudiantes.</p>
-          </div>
+    <!-- Tarjetas con recursos destacados -->
+    <section class="destacada">
+      <h3>Contenido Destacado y Recursos Visuales</h3>
+      <div class="card-container">
+        <div class="card">
+          <img
+            src="./img/software-educativo.png"
+            alt="Software educativo"
+            class="responsive-img small-img"
+          />
+          <h4>
+            <a href="https://flexboxfroggy.com/#es" target="_blank"
+              >Software Educativo</a
+            >
+          </h4>
+          <p>Herramientas interactivas para el aprendizaje.</p>
         </div>
-      </section>
+        <div class="card">
+          <img
+            src="./img/innovacion-pedagogica.png"
+            alt="Innovación pedagógica"
+            class="responsive-img small-img"
+          />
+          <h4>
+            <a
+              href="https://www.redem.org/10-innovaciones-pedagogicas-que-incrementaran-su-impacto-en-la-educacion-mundial/"
+              target="_blank"
+              >Innovación Pedagógica</a
+            >
+          </h4>
+          <p>Últimas tendencias en educación digital.</p>
+        </div>
+        <div class="card">
+          <img
+            src="./img/proyectos-finales.jpg"
+            alt="Proyectos finales"
+            class="responsive-img small-img"
+          />
+          <h4>
+            <a
+              href="https://naturales.ues.edu.sv/investigacion/"
+              target="_blank"
+              >Proyectos Finales</a
+            >
+          </h4>
+          <p>Investigaciones realizadas por estudiantes.</p>
+        </div>
+      </div>
+    </section>
 
-      <!-- Sección de video -->
-      <section class="video-section">
-        <h3>Video Introductorio</h3>
-        <p>Conoce más sobre la facultad en este video.</p>
-        <p>Por: María Durán.</p>
-        <video controls class="responsive-video">
-          <source src="./media/CIMAT-UES.mp4" type="video/mp4">
-          Tu navegador no soporta la etiqueta de video.
-        </video>
-      </section>
-
-      <!-- Formulario de interés -->
-      <section id="formulario">
-        <h3>¿Te interesa esta carrera? Llena el siguiente formulario:</h3>
-        <form class="contact-form">
-          <label for="nombre">Nombre completo:</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required />
-
-          <label for="correo">Correo electrónico:</label>
-          <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required />
-
-          <fieldset>
-            <legend>Género:</legend>
-            <input type="radio" id="masculino" name="genero" value="Masculino" />
-            <label for="masculino">Masculino</label>
-            <input type="radio" id="femenino" name="genero" value="Femenino" />
-            <label for="femenino">Femenino</label>
-          </fieldset>
-
-          <fieldset>
-            <legend>¿Qué carrera te interesa?</legend>
-            <input type="checkbox" id="informatica" name="interes" value="Informatica" />
-            <label for="informatica">Licenciatura en Informática Educativa</label>
-            <input type="checkbox" id="matematicas" name="interes" value="Matematicas" />
-            <label for="matematicas">Licenciatura en Enseñanza de las Matemáticas</label>
-          </fieldset>
-
-          <label for="mensaje">Comentario:</label>
-          <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe aquí..."></textarea>
-
-          <input type="submit" value="Enviar datos" />
-        </form>
-
-        <p class="enlaces-utiles">
-          Más información en el sitio oficial:
-          <a href="https://naturales.ues.edu.sv/" target="_blank">Facultad de Ciencias Naturales y Matemática</a>.
-        </p>
-      </section>
-    </main>
-  </div>
-
-  <!-- PIE DE PÁGINA -->
-  <footer>
-    <p>&copy; 2025 Facultad de Ciencias Naturales y Matemática - UES. Todos los derechos reservados.</p>
-  </footer>
-</body>
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <p>
+        &copy; 2025 Facultad de Ciencias Naturales y Matemática - UES. Todos los
+        derechos reservados.
+      </p>
+    </footer>
+  </body>
 </html>
+
 
