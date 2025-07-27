@@ -32,6 +32,13 @@ header {
   flex-wrap: wrap; /* Adaptabilidad para pantallas pequeñas */
 }
 
+.header-container img {
+  max-height:500px; /* Cambiado de 70px a 110px */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+
 /* Imagenes del header */
 .header-container img {
   max-height: 70px;
@@ -71,7 +78,7 @@ header {
 
 /* Efecto hover en enlaces */
 .nav-list li a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgb(0, 153, 255);
   border-radius: 5px;
   text-decoration: none;
 }
@@ -103,7 +110,7 @@ aside {
 aside h2 {
   color: #4d0003;
   margin-bottom: 15px;
-  border-bottom: 1px solid #c8e6c9;
+  border-bottom: 1px solid #0400ff;
   padding-bottom: 10px;
 }
 
@@ -172,7 +179,7 @@ main ul {
 
 /* Imágenes más pequeñas */
 .small-img {
-  max-width: 180px;
+  max-width: 190px;
   margin: 10px auto;
 }
 
@@ -191,7 +198,7 @@ main ul {
 .destacada {
   margin-top: 30px;
   padding-top: 20px;
-  border-top: 1px dashed #cfd8dc;
+  border-top: 10px dashed #410bd7;
 }
 
 /* CONTENEDOR DE TARJETAS */
@@ -205,7 +212,7 @@ main ul {
 
 /* TARJETAS */
 .card {
-  background: rgb(197, 225, 243);
+  background: rgb(61, 166, 232);
   color: rgb(2, 2, 27);
   padding: 20px;
   border-radius: 10px;
@@ -234,7 +241,7 @@ main ul {
   padding: 30px;
   border-radius: 10px;
   margin-top: 30px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(40, 3, 79, 0.1);
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -253,7 +260,7 @@ main ul {
 .contact-form textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #c8e6c9;
+  border: 1px solid #130ab5;
   border-radius: 5px;
   font-size: 1em;
   transition: border-color 0.3s ease;
@@ -268,12 +275,14 @@ main ul {
 
 /* PIE DE PÁGINA */
 footer {
-  background-color: #cc9933; /* Color ocre */
+  background-color: #ff0019; /* Color ocre */
   color: white;
   text-align: center;
   padding: 20px;
   font-weight: bold;
   margin-top: 30px;
-  border-top: 3px solid #a67c00; /* Línea decorativa superior */
+  border-top: 3px solid #f40808; /* Línea decorativa superior */
 }
+
+
 
